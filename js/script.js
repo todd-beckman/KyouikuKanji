@@ -51,21 +51,11 @@ function setGradeContent(csv, grade) {
             reportError("Line " + i + " of grade " + grade + " not properly formatted.");
         }
 document.getElementById("grade" + grade).innerHTML += "<div class=\"row\">" +
-"   <div class=\"col-sm-" + WIDTHS[0] + "\">" + line[0] + "</div>" +
-"</div>" +
-"<div class=\"row\">" +
+"    <div class=\"col-sm-" + WIDTHS[0] + "\">" + line[0] + "</div>" +
 "    <div class=\"col-sm-" + WIDTHS[1] + "\">" + line[1] + "</div>" +
-"</div>" +
-"<div class=\"row\">" +
 "    <div class=\"col-sm-" + WIDTHS[2] + "\">" + line[2] + "</div>" +
-"</div>" +
-"<div class=\"row\">" +
 "    <div class=\"col-sm-" + WIDTHS[3] + "\">" + line[3] + "</div>" +
-"</div>" +
-"<div class=\"row\">" +
 "    <div class=\"col-sm-" + WIDTHS[4] + "\">" + line[4] + "</div>" +
-"</div>" +
-"<div class=\"row\">" +
 "    <div class=\"col-sm-" + WIDTHS[5] + "\">" + line[5] + "</div>" +
 "</div>";
 
