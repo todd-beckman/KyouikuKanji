@@ -1,4 +1,7 @@
-var HERE = window.location.hostname;
+var HERE = window.location.href;
+if (HERE.indexOf("index.html") != -1) {
+    HERE = HERE.substring(0, HERE.length - 10);
+}
 
 function loadFile(path, callback, grade) {
     var xhttp = new XMLHttpRequest();
