@@ -43,7 +43,7 @@ function setGradeHeader(grade) {
     document.getElementById("grade" + grade).innerHTML = HEADER.replace("&", grade);
 }
 
-function setGradeContent(grade, csv) {
+function setGradeContent(csv, grade) {
     var lines = csv.split("\n");
     for (var i = 0; i < lines.length; i++) {
         var line = lines[i].split(",");
