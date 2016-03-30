@@ -1,5 +1,5 @@
 var HERE = window.location.hostname + window.location.pathname;
-HERE = substring(0, HERE.length - 12);
+HERE = HERE.substring(0, HERE.length - 12);
 
 function loadFile(path, callback, grade) {
     var xhttp = new XMLHttpRequest();
