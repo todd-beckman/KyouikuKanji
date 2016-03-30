@@ -1,5 +1,4 @@
-var HERE = window.location.hostname + window.location.pathname;
-HERE = HERE.substring(0, HERE.length - 12);
+var HERE = window.location.hostname;
 
 function loadFile(path, callback, grade) {
     var xhttp = new XMLHttpRequest();
@@ -72,5 +71,5 @@ document.getElementById("grade" + grade).innerHTML += "<div class=\"row\">" +
 
 for (var i = 1; i < 7; i++) {//OBOE
     setGradeHeader(i);
-    loadFile(HERE + i + ".csv", setGradeContent, i);
+    loadFile(HERE "/grades/" + i + ".csv", setGradeContent, i);
 }
