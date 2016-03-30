@@ -71,5 +71,5 @@ document.getElementById("grade" + grade).innerHTML += "<div class=\"row\">" +
 
 for (var i = 1; i < 7; i++) {//OBOE
     setGradeHeader(i);
-    loadFile(HERE "/grades/" + i + ".csv", setGradeContent, i);
+    loadFile(HERE + "/grades/" + i + ".csv", setGradeContent, i);
 }
